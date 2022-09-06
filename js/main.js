@@ -140,8 +140,8 @@ function sumarCarrito () {
     console.log(precioProducto);
     alert(`El costo total de su compra es de $${precioProducto}`)
     let pago = parseInt (prompt ("¿Con cuánto va a pagar?"))
-    if (pago >= totalPrecio) {
-    alert ("Su vuelto es $" + (pago - totalPrecio));
+    if (pago >= precioProducto) {
+    alert ("Su vuelto es $" + (pago - precioProducto));
     } else
     alert ("No te alcanza");
 }
